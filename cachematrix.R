@@ -30,7 +30,11 @@ cacheSolve <- function(cacheMatrix) {
   cacheMatrix$cache_inverse()
 }
 
+# This will calculate and cache the inverse
+matrix <- makeCacheMatrix(matrix(c(6, 8, 7, 9), nrow = 2))
+cacheSolve(matrix)
 
+#example
 matrix <- makeCacheMatrix(matrix(c(6, 8, 7, 9), nrow = 2))
 matrix$set(matrix(c(6, 8, 7, 9), nrow = 2))
 cacheSolve(matrix)
